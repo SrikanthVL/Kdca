@@ -40,7 +40,7 @@ function Header() {
         <img className=" logo" src={`data:image/jpeg;base64,${logo}`}></img>
       </div>
       <div className="col-md-8">
-        <h5 className="orgname">KALLAKURICHI DISTRICT CHESS ASSOICIATIONS</h5>
+        <h5 className="orgname">KALLAKURICHI DISTRICT CHESS ASSOICIATION</h5>
       </div>
       <div className="col-md-3 headerBtns">
         {/* <Search
