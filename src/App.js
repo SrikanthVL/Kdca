@@ -7,13 +7,14 @@ import Login from './components/login';
 import NewRegister from "./components/newRegister";
 import DashBoard from "./components/Dashboard";
 import PlayersList from "./components/playersList";
+import "./assets/styles/app.scss";
+
 
 function App() {
   return (
-    <div className='App'>
+    <div className='app'>
 		<BrowserRouter>
 		<Header></Header>
-
 		   <Routes>
 			  <Route path='/' element={<Login/>} />
 			  <Route path='/newRegister' element={<NewRegister/>}></Route>
@@ -21,7 +22,7 @@ function App() {
 			  <Route path='/dashboard' element={<DashBoard/>}></Route>
 		  </Routes>
 		</BrowserRouter>
-		<Footer></Footer>
+		<Footer className="footer"></Footer>
     </div>
   );
 }

@@ -22,21 +22,16 @@ function Login() {
   }
 
   return (
-    <div className="container col-md-12 " id="container">
+    <div className="main-container" >
+      <div className="container col-md-12 " id="container">
       <form
         autoComplete="off"
         onSubmit={handleSubmit(onSubmit)}
         className="sign-in-container text-center"
       >
-        <div className="row d-flex col-md-12 mt-4">
-          {/* <div className="col-md-2">
-            <img className="logo" src={KDCALogo}></img>
-          </div> */}
-          <div className="col-md-12">
-          <img className="kdca" src={KDCAImage}></img>
-          </div>
-        </div>
-        <div className="mt-3">
+      
+        <div className="">
+        <img className="kdca" src={KDCAImage}></img>
           <input
             type="text"
             id="name"
@@ -61,22 +56,29 @@ function Login() {
             placeholder="Password"
           />
           <p>{errors.password?.message}</p>
-        </div>
-        <br></br>
 
+        <div>
         <button type="submit" className="m-1 signin">
           Sign In
         </button>
+        <br></br>
+
         <button onClick={onRegister} className="m-1 signup">
           Sign Up
         </button>
+        </div>
 
         <a href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">
           Forgot password?
         </a>
+
+        </div>
+        
       </form>
       <div className="overlay-container">
-        <img src={LoginImage} width="600" height="600"></img>
+        <img className="loginImg" src={LoginImage}></img>
+      </div>
+
       </div>
     </div>
   );
