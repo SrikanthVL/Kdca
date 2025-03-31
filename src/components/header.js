@@ -29,7 +29,7 @@ function Header() {
   }
 
   return (
-    <div className="header col-sm-12">
+    <div className="header col-md-12">
       <div className=" header1">
         <img className=" logo" src={logo}></img>
       </div>
@@ -41,7 +41,7 @@ function Header() {
           <SearchOutlined /> {searchTitle}
         </button>)}
 
-        {buttonText && (<Input placeholder="Search Username" className="">
+        {buttonText && (<Input placeholder="Search KKDCA Id" className="searchUsrBtn">
         </Input>)}
 
         {buttonText && (

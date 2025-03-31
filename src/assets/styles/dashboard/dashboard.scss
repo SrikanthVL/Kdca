@@ -1,25 +1,69 @@
-.main-container {
-    display: flex;
-    .side-nav {
-        width: 250px;
-        min-width: 230px;
-        min-height: calc(100vh - 70px);
-        background-color: #113c60;
-        color: #fff;
-        box-shadow: 5px 5px 5px #939393;
-        @media only screen and (max-width: 1300px) {
-            width: 100px;
-            min-width: 100px;
+.dashboard-container{
+    width: 85%; 
+    background-color: aliceblue; 
+    .container1{
+        width: 100%;
+        .flex1 {
+            margin-top: 100px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 5px;
+            // margin: 10px;
+            margin-left: 20px;
+            width: 80%;
+            box-shadow: 5px 5px 5px #939393;
         }
+        .flex2{
+            margin-top: 100px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            width: 30%;
+            box-shadow: 5px 5px 5px #939393;
+        }
+        
+    } 
+    .container2 {
+        width: 100%;
+        .flex3{
+            margin-top: 30px;
+            height: 320px;
+            background-color: #fff;
+            border-radius: 5px;
+            // margin: 10px;
+            margin-left: 20px;
+            width: 31.33%;
+            box-shadow: 5px 5px 5px #939393;
+            overflow: auto;
+
+        }
+        .puzzleContainer{
+            justify-content: center;
+            .dailyPuzzle{
+                height: 270px;
+                width: 350px;
+                text-align: center;
+            }
+            .puzzleType{
+                text-align: center;
+            }
+        }
+    } 
+    .flexHeading{
+        font-size: 1.2em;
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        fill: rgb(51, 51, 51);
+        text-align: center;
     }
-    // .main {
-    //     width: 1200px;
-    // }
-    .main {
-        width: -webkit-fill-available;
-        background-color: aliceblue;
+    .announcements{
+        overflow: auto;
+        height: 300px;
+
     }
+    
+    
 }
-// nz-select {
-//     width: 100px;
-// }

@@ -7,6 +7,7 @@ import Login from './components/login';
 import NewRegister from "./components/newRegister";
 import DashBoard from "./components/Dashboard";
 import PlayersList from "./components/playersList";
+import Main from "./components/main/main";
 import "./assets/styles/app.scss";
 
 
@@ -19,6 +20,8 @@ function App() {
 			  <Route path='/' element={<Login/>} />
 			  <Route path='/newRegister' element={<NewRegister/>}></Route>
 			  <Route path='/playersList' element={<PlayersList/>}></Route>
+			  <Route path='/main' element={<Main/>}></Route>
+
 			  <Route path='/dashboard' element={<DashBoard/>}></Route>
 		  </Routes>
 		</BrowserRouter>

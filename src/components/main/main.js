@@ -1,10 +1,15 @@
 import React from "react";
+import SideNav from "../side-nav/side-nav";
+import DashBoard from "../Dashboard";
+import '../../assets/styles/mains/main.scss';
 
-
-function main() {
+function Main() {
     return (
-        <div>Hi</div>
+        <div className="mainScreen d-flex">
+            <SideNav className="main-sideNav"></SideNav>
+            <DashBoard className="main-dashBoard"></DashBoard>
+        </div>
     )
 }
 
-export default main;
+export default Main;
